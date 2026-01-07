@@ -48,7 +48,7 @@ params:
     profileMode:
           enabled: true
           title: Jaehyeok Ryu
-          subtitle: "Hello. I'm Jaehyeok Ryu, an Integrated M.S./Ph.D. student in the Department of Electrical and Computer Engineering (Advisor: Yunho Oh). My research interests include computer architecture, system software. Welcome to my personal website!"
+          subtitle: "Hello. I'm Jaehyeok Ryu, an Integrated M.S./Ph.D. student in the Department of Electrical and Computer Engineering (Advisor: Yunho Oh).\n My research interests include computer architecture, system software. Welcome to my personal website!"
           imageUrl: "picture.jpg"
           imageWidth: 160
           imageHeight: 160
