@@ -12,12 +12,15 @@ taxonomies:
 
 menu:
     main:
-        - name: Papers
+        - name: Publications
           url: papers/
-          weight: 2
+          weight: 1
+        - name: Education
+          url: education/
+          weight: 1
         - name: Notion
           url: https://n3mon3mo.notion.site/2dfed36d178380f49a2ecad0ae9682b8?v=2dfed36d1783815a97fd000cdbeedc41&source=copy_link
-          weight: 3
+          weight: 2
 
 params:
     description: "This website hosts Jaehyeok Ryu's research papers, books, course materials, data, curriculum vitae, and contact information."
@@ -35,7 +38,6 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -51,10 +53,10 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Papers
+            - name: Publications
               url: papers/
-            - name: Archive
-              url: archive/
+            - name: Education
+              url: education/
             - name: Notion
               url: https://n3mon3mo.notion.site/2dfed36d178380f49a2ecad0ae9682b8?v=2dfed36d1783815a97fd000cdbeedc41&source=copy_link
     socialIcons:
@@ -66,6 +68,8 @@ params:
           url: https://github.com/Jaehyeok-Ryu
         # - name: LinkedIn
         #   url: https://www.linkedin.com/in/jaehyeok-ryu-945b25210/
+        - name: ORCID
+          url: https://orcid.org/0009-0000-0210-6181
 
     assets:
         disableScrollBarStyle: true
