@@ -1,4 +1,4 @@
 ---
-title: "Papers"
+title: "Publications"
 description: ""
 ---

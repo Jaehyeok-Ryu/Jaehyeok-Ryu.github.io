@@ -9,7 +9,7 @@ cover:
 doi: "10.1145/3735452.3735537"
 ---
 
-##### Summary (English)
+##### Summary
 
 This paper presents Kubism, a software approach designed to improve the performance
 and resource utilization of K-means clustering on mobile heterogeneous platforms
