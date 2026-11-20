@@ -43,7 +43,7 @@
     border: 2px solid var(--border);
 }
 
-.post-entry:hover {
+.post-entry:not(.workshop-entry):hover {
      border: 2px solid var(--darkcolor);
 }
 
@@ -51,9 +51,14 @@
     display: none;
 }
 
-.entry-header h2 {
+.entry-header h2,
+.workshop-entry .entry-header h3 {
     font-size: 20px;
     line-height: var(--lineheight);
+}
+
+.workshop-entry p {
+    margin-top: 8px;
 }
 
 .entry-content {
