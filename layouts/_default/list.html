@@ -63,6 +63,11 @@
       </span>
       {{- end }}
     </h2>
+    {{- if eq $.Section "papers" }}
+      {{- with .Params.venue }}
+      <p class="entry-venue">{{ . }}</p>
+      {{- end }}
+    {{- end }}
   </header>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">

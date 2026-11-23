@@ -57,6 +57,13 @@
     line-height: var(--lineheight);
 }
 
+.entry-venue {
+    margin-top: 6px;
+    color: var(--content);
+    font-size: var(--entrysize);
+    font-weight: var(--semibold);
+}
+
 .workshop-entry p {
     margin-top: 8px;
 }

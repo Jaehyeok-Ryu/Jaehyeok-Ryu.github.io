@@ -1,5 +1,6 @@
 ---
 title: "Futurism: Accelerating K-Means Clustering on Embedded Systems via Vector Engines"
+venue: "IEEE ESL"
 # Crossref currently lists only the publication year (2026).
 # Add date once the exact publication date is confirmed on IEEE Xplore.
 tags: ["k-means","heterogeneous computing","SIMD","vector engines","embedded systems"]

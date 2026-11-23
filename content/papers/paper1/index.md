@@ -1,5 +1,6 @@
 ---
 title: "Kubism: Disassembling and Reassembling K-Means Clustering for Mobile Heterogeneous Platforms"
+venue: "LCTES"
 date: 2025-06-13
 tags: ["k-means","heterogeneous computing","mobile platforms","embedded"]
 author: ["Seondeok Kim","Sangun Choi","Jaebeom Jeon","Junsu Kim","Minseong Gil","**Jaehyeok Ryu**","Yunho Oh"]
