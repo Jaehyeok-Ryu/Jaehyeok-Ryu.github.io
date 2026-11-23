@@ -1,8 +1,8 @@
 ---
 title: "Futurism: Accelerating K-Means Clustering on Embedded Systems via Vector Engines"
 venue: "IEEE ESL"
-# Crossref currently lists only the publication year (2026).
-# Add date once the exact publication date is confirmed on IEEE Xplore.
+# Crossref currently lists only the publication year.
+publicationYear: "2026"
 tags: ["k-means","heterogeneous computing","SIMD","vector engines","embedded systems"]
 author: ["**Jaehyeok Ryu**","Dowoong Kong","Yiseok Lee","Minseong Gil","Gunjae Koo","Myung Kuk Yoon","Yunho Oh"]
 description: "An English summary and metadata for 'Futurism', a heterogeneous K-means clustering framework that uses CPU SIMD capabilities and dynamic CPU-GPU workload distribution to improve performance on embedded systems."

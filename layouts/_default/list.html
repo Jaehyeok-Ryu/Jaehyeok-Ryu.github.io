@@ -30,6 +30,22 @@
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
 {{- end }}
 
+{{- if eq .Section "papers" }}
+  {{- $publications := slice }}
+  {{- range $pages }}
+    {{- $sortDate := mul (.Params.publicationyear | default 0 | int) 10000 }}
+    {{- if not .Date.IsZero }}
+      {{- $sortDate = .Date.Format "20060102" | int }}
+    {{- end }}
+    {{- $publications = $publications | append (dict "page" . "date" $sortDate) }}
+  {{- end }}
+  {{- /* A year-only publication sorts below exact dates from the same year. */}}
+  {{- $pages = first 0 $pages }}
+  {{- range sort $publications "date" "desc" }}
+    {{- $pages = $pages | append .page }}
+  {{- end }}
+{{- end }}
+
 {{- $paginator := .Paginate $pages }}
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
@@ -88,7 +104,9 @@
   <div class="post-content">
     <h2 id="workshops">Workshops</h2>
   </div>
-  {{- range . }}
+  {{- $datedWorkshops := where . "date" "ne" nil }}
+  {{- $undatedWorkshops := where . "date" "eq" nil }}
+  {{- range append $undatedWorkshops (sort $datedWorkshops "date" "desc") }}
   <article class="post-entry workshop-entry">
     <header class="entry-header">
       <h3>{{ .title }}</h3>
