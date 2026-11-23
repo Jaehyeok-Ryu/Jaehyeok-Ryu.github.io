@@ -92,10 +92,12 @@
   <article class="post-entry workshop-entry">
     <header class="entry-header">
       <h3>{{ .title }}</h3>
+      {{- with .venue }}
+      <p class="entry-venue">{{ . }}</p>
+      {{- end }}
     </header>
     <div class="entry-footer">
       <p>{{ .authors | markdownify }}</p>
-      <p>{{ .venue }}</p>
     </div>
   </article>
   {{- end }}

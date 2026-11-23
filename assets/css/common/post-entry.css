@@ -64,7 +64,7 @@
     font-weight: var(--semibold);
 }
 
-.workshop-entry p {
+.workshop-entry .entry-footer {
     margin-top: 8px;
 }
 
